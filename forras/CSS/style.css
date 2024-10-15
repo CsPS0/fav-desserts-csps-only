@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.kartya-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.kartya {
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartya:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.kartya img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.kartya h2 {
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.kartya-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navigacio {
+    background-color: #444;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marka {
+    font-size: 24px;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+.tartalom-szakasz,
+.hozzavalok-szakasz,
+.elkeszites-szakasz {
+    background-color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.kep-tartalom {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kep-reszponziv {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#marcipan-kontener {
+    margin-top: 30px;
+}
+
+#marcipan-kep {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hozzavalok-szakasz ul,
+.elkeszites-szakasz ol {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.hozzavalok-szakasz li,
+.elkeszites-szakasz li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .kartya {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .kartya-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kartya {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .kartya img {
+        height: 250px;
+    }
+
+    .navigacio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marka {
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .kartya h2 {
+        font-size: 20px;
+    }
+
+    .tartalom-szakasz,
+    .hozzavalok-szakasz,
+    .elkeszites-szakasz {
+        padding: 20px;
+    }
+}

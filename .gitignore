@@ -396,3 +396,43 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+!*.html
+!*.css
+!*.js
+
+# Ignore local environment configurations
+.env
+*.local
+*.dev
+*.test
+
+# Ignore localhost-specific configuration files
+localhost.*
+*.localhost
+local_*
+
+# Ignore IP configuration files (replace with your actual file names if needed)
+ip_config.*
+*.ip
+*.cfg
+
+# Ignore log files that might include sensitive data
+*.log
+
+# Ignore database files or local SQLite databases
+*.sqlite
+*.db
+
+# Ignore files containing secrets or keys
+*.key
+*.pem
+*.cert
+
+# Ignore backup files
+*.bak
+*.old
+
+# Ignore any temporary files
+/tmp
+*.tmp
