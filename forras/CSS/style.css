@@ -2,12 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #232323;
+    background: rgb(35,35,35);
+    background: linear-gradient(29deg, rgba(35,35,35,1) 20%, rgba(105,54,158,1) 80%);
     color: #f4f4f4;
 }
 
@@ -63,7 +67,7 @@ h1, h2 {
 }
 
 .navigacio {
-    background-color: #444;
+    background-color: #232323;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -74,6 +78,10 @@ h1, h2 {
     font-size: 24px;
     color: #f4f4f4;
     text-decoration: none;
+}
+
+.marka:hover {
+    cursor: help;
 }
 
 .menu {
@@ -92,7 +100,11 @@ h1, h2 {
 }
 
 .menu a:hover {
-    color: #ddd;
+    color: #989898;
+}
+
+.menu a:active {
+    color: #f4f4f4;
 }
 
 .elvalasztas {
@@ -106,13 +118,13 @@ h1, h2 {
 .tartalom-szakasz,
 .hozzavalok-szakasz,
 .elkeszites-szakasz {
-    background-color: #333;
+    background-color: #232323;
     border-radius: 10px;
     margin: 20px auto;
     padding: 30px;
     max-width: 1000px;
     width: 90%;
-    border: #989898 1px solid;
+    border: #989898 2px solid;
 }
 
 .kep-tartalom {
