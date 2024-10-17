@@ -7,8 +7,12 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #222;
+    background-color: #232323;
     color: #f4f4f4;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 h1, h2 {
@@ -91,6 +95,14 @@ h1, h2 {
     color: #ddd;
 }
 
+.elvalasztas {
+    text-align: center;
+}
+
+.elvalasztas:first-child {
+    margin-top: 50px;
+}
+
 .tartalom-szakasz,
 .hozzavalok-szakasz,
 .elkeszites-szakasz {
@@ -100,6 +112,7 @@ h1, h2 {
     padding: 30px;
     max-width: 1000px;
     width: 90%;
+    border: #989898 1px solid;
 }
 
 .kep-tartalom {
