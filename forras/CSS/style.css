@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
     background: rgb(35,35,35);
     background: linear-gradient(29deg, rgba(35,35,35,1) 20%, rgba(105,54,158,1) 80%);
+    background-repeat: no-repeat;
     color: #f4f4f4;
 }
 
@@ -33,6 +34,7 @@ h1, h2 {
 
 .kartya {
     background-color: #232323;
+    border: #393939 1px solid;
     border-radius: 15px;
     overflow: hidden;
     width: 350px;
@@ -45,10 +47,25 @@ h1, h2 {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .kartya img {
+        transition: filter 0.3s ease;
+        filter: blur(3px);
+    }
+
+    .kartya:hover img {
+        filter: blur(0);
+    }
+}
+
 .kartya img {
     width: 100%;
     height: 280px;
     object-fit: cover;
+}
+
+.kartya:hover img {
+    filter: blur(0);
 }
 
 .kartya h2 {
@@ -124,7 +141,7 @@ h1, h2 {
     padding: 30px;
     max-width: 1000px;
     width: 90%;
-    border: #989898 2px solid;
+    border: #393939 3px solid;
 }
 
 .kep-tartalom {
